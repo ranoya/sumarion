@@ -1,0 +1,127 @@
+
+#sumarionblock {
+
+	width: 360px;
+	height: 100vh;
+	position: fixed;
+	right: -360px;
+	top: 0;
+	z-index: 6001;
+	transition: all 0.4s ease-out;
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+#sumarionconteudo {
+	width: calc(100% - 60px);
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	display: inline-block;
+
+}
+
+#sumarionconteudo h2.capitulo {
+
+	/*font-size: 18px;
+	line-height: 26px;*/
+	clear: both;
+	margin-bottom: 5px;
+	margin-top: 30px;
+
+}
+
+#sumarionconteudo a.topico {
+
+	clear: both;
+	display: block;
+	/*line-height: 20px;
+	font-size: 14px;*/
+	text-decoration: none;
+	margin-bottom: -3px;
+	padding: 5px 13px 5px 13px;
+	margin-left: -13px;
+
+
+}
+
+#sumarionconteudo p.topico {
+
+	clear: both;
+	display: block;
+	/*line-height: 20px;
+	font-size: 14px;*/
+	text-decoration: none;
+	margin-bottom: -3px;
+	padding: 5px 13px 5px 13px;
+	margin-left: -13px;
+
+} 
+
+.estapagina {
+
+}
+
+
+#conteudodocumento {
+
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+	margin-left: 0;
+	transition: all 0.4s ease-out;
+
+}
+
+#sumarionlink {
+
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	width: 12px;
+	height: 12px;
+	top: calc(50vh - 6px);
+	right: 2.2vw;
+	z-index:7000;
+	border-radius: 20px;
+	transition: all 0.2s ease-out;
+	margin: 0;
+	padding: 0;
+	border: 0 solid black;
+}
+
+#sumarionlink:hover {
+	
+	transition: all 0.2s ease-out;
+	border: 5px solid transparent;
+	border-color: var(--sumarionicon-hover, black);
+	margin-right: -5px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	margin-left: -5px;
+}
+
+#sumarionicon {
+	width: 12px;
+	height: 12px;
+	transition: all 0.2s ease-out;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 5px;
+}
+
+#sumarionicon circle {
+	stroke: var(--sumarionicon-hover, black);
+	transition: all 0.2s ease-out;
+}
+
+#sumarionlink:hover #sumarionicon circle {
+	
+	stroke: var(--sumarionicon-inverse, white);
+	transition: all 0.2s ease-out;
+}
